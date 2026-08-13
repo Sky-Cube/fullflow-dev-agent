@@ -5,6 +5,14 @@
 [![English](https://img.shields.io/badge/English-README-blue?style=flat-square)](README.md)
 [![简体中文](https://img.shields.io/badge/简体中文-README.zh--CN-red?style=flat-square)](README.zh-CN.md)
 
+**基于 Claude Code 的全链路软件开发智能体体系**
+
+[![Author](https://img.shields.io/badge/Author-Sky--Cube-brightgreen?style=flat-square)](https://github.com/Sky-Cube)
+[![Language](https://img.shields.io/badge/Language-Markdown-blue?style=flat-square)](https://github.com/Sky-Cube/fullflow-dev-agent)
+[![Stars](https://img.shields.io/github/stars/Sky-Cube/fullflow-dev-agent?style=flat-square&color=yellow)](https://github.com/Sky-Cube/fullflow-dev-agent/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/Sky-Cube/fullflow-dev-agent?style=flat-square&color=orange)](https://github.com/Sky-Cube/fullflow-dev-agent/commits)
+[![License](https://img.shields.io/github/license/Sky-Cube/fullflow-dev-agent?style=flat-square&color=purple)](LICENSE)
+
 </div>
 
 > 基于《Agent与Skill体系架构设计》落地为 Claude Code 原生机制(agents/*.md + skills/*/SKILL.md)。
