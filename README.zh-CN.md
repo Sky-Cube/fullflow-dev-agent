@@ -1,10 +1,15 @@
-# 全栈研发 Agent 与 Skill 体系说明
+<div align="center">
+
+# 🚀 FullFlow DevAgent 全栈研发 Agent 与 Skill 体系
+
+[![English](https://img.shields.io/badge/English-README-blue?style=flat-square)](README.md)
+[![简体中文](https://img.shields.io/badge/简体中文-README.zh--CN-red?style=flat-square)](README.zh-CN.md)
+
+</div>
 
 > 基于《Agent与Skill体系架构设计》落地为 Claude Code 原生机制(agents/*.md + skills/*/SKILL.md)。
 > 本仓库即完整体系:`.claude/agents`(31 个 Agent)、`.claude/skills`(96 个 Skill)、`CLAUDE.md`(总控规则)。
 > 安装方式:将本仓库 `.claude/` 目录与 `CLAUDE.md` 复制到目标项目根目录(项目级)或 `~/.claude/`(全局),总控规则随之生效。
-
-[English → README.md](README.md)
 
 > ⚠️ 本项目内容由 AI 辅助生成,使用前请评估其适用性。
 

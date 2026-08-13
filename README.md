@@ -1,20 +1,36 @@
-# FullFlow DevAgent
+<div align="center">
 
-**A full-chain software development agent system for Claude Code** — 6 master agents, 25 sub-agents, and 96 atomic skills covering product, development, quality, testing, operations, and security. From idea to production, with mandatory quality gates and a security layer that runs through every stage.
+# 🚀 FullFlow DevAgent
 
-[中文文档 → README.zh-CN.md](README.zh-CN.md)
+[![English](https://img.shields.io/badge/English-README-blue?style=flat-square)](README.md)
+[![简体中文](https://img.shields.io/badge/简体中文-README.zh--CN-red?style=flat-square)](README.zh-CN.md)
 
-> ⚠️ This project's content was AI-assisted. Please evaluate its suitability before use.
+**基于 Claude Code 的全链路软件开发智能体体系**
 
-## Highlights
+[![Author](https://img.shields.io/badge/Author-your--github--username-brightgreen?style=flat-square)](https://github.com/your-github-username)
+[![Language](https://img.shields.io/badge/Language-Markdown-blue?style=flat-square)](https://github.com/your-github-username/fullflow-dev-agent)
+[![Stars](https://img.shields.io/github/stars/your-github-username/fullflow-dev-agent?style=flat-square&color=yellow)](https://github.com/your-github-username/fullflow-dev-agent/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/your-github-username/fullflow-dev-agent?style=flat-square&color=orange)](https://github.com/your-github-username/fullflow-dev-agent/commits)
+[![License](https://img.shields.io/github/license/your-github-username/fullflow-dev-agent?style=flat-square&color=purple)](LICENSE)
 
-- **4-tier hierarchy**: Orchestrator (main conversation) → 6 master agents → 25 sub-agents → 96 atomic skills
-- **Full pipeline**: Requirements → Development → Quality review → Testing → Ops delivery
-- **Enforced gates**: No review pass, no testing. No test pass, no release. Security & compliance checks at every hand-off
-- **Pure prompts, zero code**: Everything is markdown prompt definitions (`.md` files) — nothing to compile, nothing to install
-- **Works with any tech stack**: Agents are technology-agnostic; skills provide methodology
+</div>
 
-## Architecture
+**English** | Full-chain software development agent system for Claude Code — 6 master agents, 25 sub-agents and 96 atomic skills covering product, development, quality, testing, operations and security. From idea to production, with mandatory quality gates and a security layer that runs through every stage.
+
+**中文简介** | 基于 Claude Code 的全链路软件开发智能体体系:6 大主 Agent、25 个二级 Sub-Agent、96 个原子 Skill,覆盖产品、研发、质量、测试、运维、安全六大环节,从需求到上线,全程质量门禁与安全合规贯穿校验。
+
+📖 [中文文档 → README.zh-CN.md](README.zh-CN.md) · [贡献指南 → CONTRIBUTING.md](CONTRIBUTING.md)
+
+<h2 align="center">📌 Features</h2>
+
+| 功能描述 | 状态 |
+|---|---|
+| 🏗️ 4 级层级体系:总控(主对话)→ 6 大主 Agent → 25 个 Sub-Agent → 96 个原子 Skill | ✅ 已完成 |
+| 🔗 全链路流水线:需求 → 开发 → 质量评审 → 测试 → 运维交付,安全合规贯穿每个环节 | ✅ 已完成 |
+| 🚦 强制质量门禁:未过评审不得测试、未过测试不得发布、高危运维需双重确认 | ✅ 已完成 |
+| 📝 纯 Prompt 零代码:全部为 Markdown 提示词定义,无需编译安装,适配任意技术栈 | ✅ 已完成 |
+
+## 🏛 Architecture
 
 ```
 Project Orchestrator (main conversation + CLAUDE.md)
@@ -31,7 +47,7 @@ Project Orchestrator (main conversation + CLAUDE.md)
 - **Reverse flow**: any problem found rolls back to the previous stage for rework; the orchestrator tracks closure
 - **Totals**: 6 master agents + 25 sub-agents + 96 atomic skills
 
-## Repository Layout
+## 📂 Repository Layout
 
 ```
 fullflow-dev-agent/
@@ -52,7 +68,7 @@ fullflow-dev-agent/
         └── <skill-name>/SKILL.md
 ```
 
-## Installation
+## 🚀 Installation
 
 **Project-level (recommended):** copy `.claude/` and `CLAUDE.md` into the root of your project repo.
 
@@ -60,7 +76,7 @@ fullflow-dev-agent/
 
 Agents and skills are then automatically discovered by Claude Code. Dispatch them by name, e.g. "Delegate to the Architecture Design Sub-Agent".
 
-## Agent Inventory (31)
+## 🤖 Agent Inventory (31)
 
 ### 🟡 Product & Requirements Master Agent (`product-master`)
 
@@ -123,7 +139,7 @@ Agents and skills are then automatically discovered by Claude Code. Dispatch the
 | sec-data-sub.md | Data Security & Privacy Sub-Agent | Sensitive data identification, masking, encryption, leak risk |
 | sec-compliance-sub.md | Compliance & Risk Sub-Agent | Compliance gaps, risk grading, remediation plans, audit reports |
 
-## Skill Inventory (96)
+## 🧩 Skill Inventory (96)
 
 | Skill | Directory | Owner Sub-Agent |
 |---|---|---|
@@ -224,7 +240,7 @@ Agents and skills are then automatically discovered by Claude Code. Dispatch the
 | Remediation Plan Skill | remediation-plan | Compliance & Risk |
 | Security Audit Report Skill | security-audit-report | Compliance & Risk |
 
-## Scheduling & Gates
+## 🚦 Scheduling & Gates
 
 1. **Delegation**: the orchestrator delegates tasks via the Agent tool, optionally targeting a specific agent with `subagent_type`; task lists are tracked with TaskCreate/TaskUpdate
 2. **Master agents schedule**: receive a task → break it down → delegate to sub-agents → consolidate & accept → deliver upward; they never perform the work themselves
@@ -232,7 +248,7 @@ Agents and skills are then automatically discovered by Claude Code. Dispatch the
 4. **Skills are methodology**: loaded on demand via the Skill tool; each skill belongs to one sub-agent's scope — using a skill outside its owner's scenarios is a violation
 5. **Gates are mandatory**: development → quality review → testing → ops; no stage may be skipped; security & compliance checks happen before work starts and after delivery; high-risk ops require orchestrator + security double confirmation
 
-## Honest Notes on Design vs. Claude Code Reality
+## 📋 Honest Notes on Design vs. Claude Code Reality
 
 | Original design assumption | How it actually works in Claude Code |
 |---|---|
@@ -242,10 +258,14 @@ Agents and skills are then automatically discovered by Claude Code. Dispatch the
 | Orchestrator forbidden from calling sub-agents directly | Relaxed: by default tasks go through master agents; for single clearly-scoped tasks the orchestrator may call a sub-agent directly, still accepting against the master agent's criteria |
 | Generate a ProjectControllerAgent.{py/java/ts} code framework | Not generated; that part of the original design doc serves as reference only |
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are warmly welcome — new skills, sharper checklists, better rules, translations. See [CONTRIBUTING.md](CONTRIBUTING.md) for conventions and the submission workflow ([中文贡献指南](CONTRIBUTING.zh-CN.md)). All participants are expected to follow our [Code of Conduct](CODE_OF_CONDUCT.md).
 
-## License
+## 📄 License
 
 [MIT](LICENSE)
+
+---
+
+> ⚠️ This project's content was AI-assisted. Please evaluate its suitability before use.
