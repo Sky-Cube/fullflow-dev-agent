@@ -7,11 +7,11 @@
 
 **基于 Claude Code 的全链路软件开发智能体体系**
 
-[![Author](https://img.shields.io/badge/Author-your--github--username-brightgreen?style=flat-square)](https://github.com/your-github-username)
-[![Language](https://img.shields.io/badge/Language-Markdown-blue?style=flat-square)](https://github.com/your-github-username/fullflow-dev-agent)
-[![Stars](https://img.shields.io/github/stars/your-github-username/fullflow-dev-agent?style=flat-square&color=yellow)](https://github.com/your-github-username/fullflow-dev-agent/stargazers)
-[![Last Commit](https://img.shields.io/github/last-commit/your-github-username/fullflow-dev-agent?style=flat-square&color=orange)](https://github.com/your-github-username/fullflow-dev-agent/commits)
-[![License](https://img.shields.io/github/license/your-github-username/fullflow-dev-agent?style=flat-square&color=purple)](LICENSE)
+[![Author](https://img.shields.io/badge/Author-your--github--username-brightgreen?style=flat-square)](https://github.com/Sky-Cube)
+[![Language](https://img.shields.io/badge/Language-Markdown-blue?style=flat-square)](https://github.com/Sky-Cube/fullflow-dev-agent)
+[![Stars](https://img.shields.io/github/stars/Sky-Cube/fullflow-dev-agent?style=flat-square&color=yellow)](https://github.com/Sky-Cube/fullflow-dev-agent/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/Sky-Cube/fullflow-dev-agent?style=flat-square&color=orange)](https://github.com/Sky-Cube/fullflow-dev-agent/commits)
+[![License](https://img.shields.io/github/license/Sky-Cube/fullflow-dev-agent?style=flat-square&color=purple)](LICENSE)
 
 </div>
 
